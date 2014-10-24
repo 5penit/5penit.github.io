@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>5penit.github.io by 5penit</title>
+    <title>openit track2 by 5penit</title>
 
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
@@ -17,7 +17,7 @@
   <body>
     <div class="wrapper">
       <header class="without-description">
-        <h1>5penit.github.io</h1>
+        <h1>openit track2</h1>
         <p></p>
         <p class="view"><a href="https://github.com/5penit">View the Project on GitHub <small>5penit</small></a></p>
         <ul>
@@ -42,6 +42,29 @@
 <p><a href="https://github.com/open--it/yatz_ruby">Yahtzee Ruby 코드</a>   -- 유봉주 프로(Asset Lab)</p>
 
 <p><a href="https://github.com/open--it/yatz_python">Yahtzee Python 코드</a>   -- 김광진 프로(Asset Lab)</p>
+
+<p>얏찌는 주사위 5개와 점수판으로 하는 간단한 보드게임입니다.</p>
+
+<p>플레이어는 13번의 턴에 게임을 하면서 준비된 13개의 슬롯에 점수를 적을 수 있습니다.</p>
+
+<ul>
+<li><p>각 슬롯은 한 번만 점수를 적을 수 있으며, 각 턴 마다 꼭 한 슬롯에는 점수를 적어야 합니다. 따라서 게임을 모두 마치면 모든 슬롯에 점수가 채워집니다.</p></li>
+<li><p>점수는 5개의 주사위의 눈을 각 슬롯의 규칙으로 해석하여 결정합니다.</p></li>
+<li><p>1 ~ 6번 슬롯은 해당 슬롯 주사위 눈 수의 합입니다.
+예를 들어, [ 2, 4, 5, 2, 2 ] 는 2번 슬롯에 적는다면 6점(2 x 3) 이고 4번 슬롯에 적는다면 4점(4 x 1) 입니다.</p></li>
+<li><p>3 of a kinds 는 눈이 3개가 동일할 때 모든 주사위 눈의 합입니다.
+예를 들어,  [ 2, 4, 5, 2, 2 ] 를 3 of a kinds 에 적는다면 15점 입니다.</p></li>
+<li><p>4 of a kinds 는 눈이 4개가 동일할 때의 모든 주사위 눈의 합입니다.</p></li>
+<li><p>Full House 는 주사위 눈이 같은 수가 셋, 둘로 나뉘면 25점을 적습니다.</p></li>
+<li>Small Straight 는 연속 수가 4개 있을 때 30 점을 적습니다.</li>
+<li>Large Straight 는 연속 수가 5개 있을 때 40 점을 적습니다.</li>
+<li><p>YAHTZEE 는 모든 주사위의 눈이 같으면 50점을 적습니다.</p></li>
+<li><p>Chance 는 그냥 모든 주사위 눈의 합을 적습니다.</p></li>
+</ul>
+
+<p>주사위는 한 턴에 세 번까지 굴릴 수 있으며, 던진 결과 중 마음에 드는 주사위를 홀드 하거나 홀드를 풀 수 있습니다. 세 번 중 언제라도 눈을 해석하여 점수를 적을 수 있으며 세 번을 모두 굴린 후에는 반드시 그 결과로 점수를 적어야 합니다.</p>
+
+<p>주사위 눈을 어느 슬롯에 적을 것 인가? 를 전략적으로 선택하는 것이 게임의 관건입니다.</p>
       </section>
     </div>
     <footer>
